@@ -1,4 +1,5 @@
-#  Classification Agent
+
+# Classification Agent
 
 import json
 from langchain_openai import ChatOpenAI
@@ -16,7 +17,7 @@ def classify_message(message: str):
     """
 
     llm = ChatOpenAI(
-        model="mistralai/mistral-7b-instruct",
+        model="openai/gpt-4o-mini",   # OpenRouter compatible model
         temperature=0,
         api_key=OPENAI_API_KEY,
         base_url=OPENAI_BASE_URL
@@ -32,7 +33,7 @@ def classify_message(message: str):
     print(raw_output)
     print("----")
 
-    # Remove markdown code fences if present
+    # Remove markdown JSON fences if present
     if raw_output.startswith("```"):
         raw_output = raw_output.replace("```json", "")
         raw_output = raw_output.replace("```", "")

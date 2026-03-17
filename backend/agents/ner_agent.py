@@ -12,7 +12,7 @@ def extract_entities(message: str):
     """
 
     llm = ChatOpenAI(
-        model="mistralai/mistral-7b-instruct",
+        model="openai/gpt-4o-mini", 
         temperature=0,
         api_key=OPENAI_API_KEY,
         base_url=OPENAI_BASE_URL

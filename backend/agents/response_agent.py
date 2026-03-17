@@ -11,7 +11,7 @@ def generate_response(message: str, classification: dict, entities: dict):
     """
 
     llm = ChatOpenAI(
-        model="mistralai/mistral-7b-instruct",
+        model="openai/gpt-4o-mini", 
         temperature=0.3,
         api_key=OPENAI_API_KEY,
         base_url=OPENAI_BASE_URL
