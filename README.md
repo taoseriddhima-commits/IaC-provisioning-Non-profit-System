@@ -29,7 +29,7 @@ Consistency : Ensure that development, testing, and production environments rema
 
 Scalability : Enable the system to handle increasing workloads by dynamically scaling containers using Kubernetes.
 
-Reliability : Reduce configuration errors and ensure reliable deployments using version-controlled infrastructure.
+Reliability : Reduce the configuration errors and ensure reliable deployments using version-controlled infrastructure.
 
 ---
 ## Tech Stack
